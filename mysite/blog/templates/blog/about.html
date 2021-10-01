@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,17 +10,12 @@
 
   <title>About - United Group</title>
 
-  <link rel="stylesheet" href="../css/maicons.css">
-
-  <link rel="stylesheet" href="../css/bootstrap.css">
-
-  <link rel="stylesheet" href="../vendor/owl-carousel/css/owl.carousel.css">
-
-  <link rel="stylesheet" href="../vendor/animate/animate.css">
-
-  <link rel="stylesheet" href="../css/theme.css">
-
-  <link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
+  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/vendor/owl-carousel/css/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.css' %}">
 </head>
 <body class="body-bg">
 
@@ -406,21 +402,15 @@
     </div>
   </footer>
 
-  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+  <script src="{% static 'js/theme.js' %}"></script>
+  <script src="{% static 'vendor/fontawesome/js/all.js' %}"></script>
+  <script src="{% static 'vendor/waypoint/jquery.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/counter_up/counter_up.js' %}"></script>
 
-  <script src="../js/bootstrap.bundle.min.js"></script>
-
-  <script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-  <script src="../vendor/wow/wow.min.js"></script>
-
-  <script src="../js/theme.js"></script>
-
-  <script src="../vendor/fontawesome/js/all.js"></script>
-
-  <script src="../vendor/waypoint/jquery.waypoints.js"></script>
-
-  <script src="../vendor/counter_up/counter_up.js"></script>
 
 <script>
   $('.counter-up').counterUp({
