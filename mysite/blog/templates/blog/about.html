@@ -1,89 +1,8 @@
-<!DOCTYPE html>
+{% extends 'blog/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-  <title>About - United Group</title>
-
-  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-  <link rel="stylesheet" href="{% static 'css/vendor/owl-carousel/css/owl.carousel.css' %}">
-  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
-  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
-  <link rel="stylesheet" href="{% static 'vendor/fontawesome/css/all.css' %}">
-</head>
-<body class="body-bg">
-
-  <!-- Back to top button -->
-  <div class="back-to-top"></div>
-
-  <header class="container-fluid side-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-            <div class="container ">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="../img/Logo.png" width="100px" height="100px" alt="">
-              </div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
-                aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupport">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="trading.html">Trading</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Finance
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Wakhema Money Changer</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Wakhema International Remittance</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="logistics.html">Logistics</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      CSR
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">New Yangon Lions Club</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Youth Society for Education</a>
-                    </div>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div> <!-- .navbar-collapse -->
-            </div> <!-- .container -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="page-banner overlay-dark bg-image" style="background-image: url(../img/about.jpeg);">
+{% block content %}
+  <div class="page-banner overlay-dark bg-image" style="background-image: url(static/img/about.jpeg)">
     <div class="banner-section">
       <div class="container text-center wow fadeInUp">
         <h1 class="text-uppercase">About Us</h1>
@@ -121,7 +40,7 @@
         <div class="row  d-flex justify-content-center align-items-center">
 
           <div class="col-12 col-lg-6 col-md-12 " align="center">
-            <img src="../img/about_mission_1.png" class="mission-img" alt="about_mission_1" >
+            <img src={% static "img/about_mission_1.png" %} class="mission-img" alt="about_mission_1" >
           </div>
           <div class="col-12 col-lg-6 col-md-12 service-align" >
             <h2 style="font-weight: bold;">COMMUNITY</h2>
@@ -141,7 +60,7 @@
 
           <div class="col-12 col-lg-6 col-md-12 " align="center">
 
-            <img src="../img/about_mission_2.png" class="mission-img" alt="about_mission_2">
+            <img src={% static "img/about_mission_2.png"%} class="mission-img" alt="about_mission_2">
           </div>
 
         </div>
@@ -151,7 +70,7 @@
         <div class="row  d-flex justify-content-center align-items-center">
 
           <div class="col-12 col-lg-6 col-md-12 " align="center">
-            <img src="../img/about_mission_3.png" class="mission-img" alt="about_mission_3">
+            <img src={% static "img/about_mission_3.png"%} class="mission-img" alt="about_mission_3">
           </div>
 
           <div class="col-12 col-lg-6 col-md-12 service-align-right" >
@@ -174,7 +93,7 @@
             <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
               <div class="card-mission ">
                 <div class="header p-3 m-2">
-                  <img src="../img/about_mission_4png.png" alt="about_mission_4">
+                  <img src={% static "img/about_mission_4png.png"%} alt="about_mission_4">
                   
                 </div>
                 <div class="body">
@@ -187,7 +106,7 @@
             <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
               <div class="card-mission ">
                 <div class="header p-3 m-2">
-                  <img src="../img/about_mission_5.png" alt="about_mission_5">
+                  <img src={%static "img/about_mission_5.png"%} alt="about_mission_5">
                   
                 </div>
                 <div class="body">
@@ -200,7 +119,7 @@
             <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
               <div class="card-mission  ">
                 <div class="header p-3 m-2">
-                  <img src="../img/about_mission_6.png" alt="about_mission_6">
+                  <img src={%static "img/about_mission_6.png"%} alt="about_mission_6">
                   
                 </div>
                 <div class="body">
@@ -258,7 +177,7 @@
 
           <div class="col-12" >
             <div class="text-center">
-              <img src="..//img/world-map.png" class="world-map" alt="world-map">
+              <img src={% static "img/world-map.png"%} class="world-map" alt="world-map">
             </div>
             <div class="p-4">
               <p class="text-xl mb-0">Create A Supply Chain That Meets Potential Future Demands</p>
@@ -279,7 +198,7 @@
   <div class="row d-flex align-items-center justify-content-center">
     <div class="img-map py-3">
       <div class="text-center">
-        <img src="../img/world-map.png" alt="">
+        <img src={%static "img/world-map.png"%} alt="">
       </div>
       <div class="p-4">
         <p>Create A Supply Chain That Meets Potential Future Demands</p>
@@ -303,7 +222,7 @@
         <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
           <div class="card-mission ">
             <div class="header p-3 m-2">
-              <img src="../img/about_mission_4png.png" alt="about_mission_4">
+              <img src={%static "img/about_mission_4png.png"%} alt="about_mission_4">
               
             </div>
             <div class="body body-p">
@@ -317,7 +236,7 @@
             <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
           <div class="card-mission">
             <div class="header p-3 m-2">
-              <img src="../img/about_mission_5.png" alt="about_mission_4">
+              <img src={%static "img/about_mission_5.png"%} alt="about_mission_4">
               
             </div>
             <div class="body body-p">
@@ -331,7 +250,7 @@
         <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
           <div class="card-mission ">
             <div class="header p-3 m-2">
-              <img src="../img/about_mission_6.png" alt="about_mission_4">
+              <img src={%static "img/about_mission_6.png"%} alt="about_mission_4">
               
             </div>
             <div class="body body-p">
@@ -420,5 +339,6 @@
 </script>
 
 
-</body>
-</html>
+
+
+{% endblock %}
