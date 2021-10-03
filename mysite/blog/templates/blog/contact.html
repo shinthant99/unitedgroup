@@ -1,92 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block content %}
+<!--cut here for base-->
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Contact - United Group</title>
-
-  <link rel="stylesheet" href="../css/maicons.css">
-
-  <link rel="stylesheet" href="../css/bootstrap.css">
-
-  <link rel="stylesheet" href="../vendor/owl-carousel/css/owl.carousel.css">
-
-  <link rel="stylesheet" href="../vendor/animate/animate.css">
-
-  <link rel="stylesheet" href="../css/theme.css">
-
-  <link rel="stylesheet" href="../vendor/fontawesome/css/all.css">
-</head>
-
-<body>
-
-  <!-- Back to top button -->
-  <div class="back-to-top"></div>
-
-  <header class="container-fluid side-nav" >
-    <div class="container">
-<div class="row">
-  <div class="col-12">
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-      <div class="container ">
-        <div class="d-flex justify-content-center align-items-center">
-        <img src="../img/Logo.png" width="100px" height="100px" alt="">
-      </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport"
-          aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupport">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="doctors.html">Trading</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Finance
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Wakhema Money Changer</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Wakhema International Remittance</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="blog.html">Logistics</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                CSR
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">New Yangon Lions Club</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Youth Society for Education</a>
-              </div>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div> <!-- .navbar-collapse -->
-      </div> <!-- .container -->
-    </nav>
-  </div>
-</div>
-</div>
-  </header>
-
-  <div class="page-banner overlay-dark bg-image" style="background-image: url(../img/contact.jpeg);" >
+  <div class="page-banner overlay-dark bg-image" style="background-image: url(/static/img/contact.jpeg);" >
     <div class="banner-section">
       <div class="container text-center wow fadeInUp">
         <h1 class="text-uppercase">Contact Us</h1>
@@ -200,7 +118,4 @@
 
   <script src="../vendor/fontawesome/js/all.js"></script>
 
-
-</body>
-
-</html>
+{% endblock content %}
