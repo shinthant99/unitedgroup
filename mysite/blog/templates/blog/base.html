@@ -42,7 +42,7 @@
                     <a class="nav-link text-white" href="{% url 'index' %}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'about' %}">About</a>
+                    <a class="nav-link text-white" href="{% url 'about' %}">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href={%url "trading"%}>Trading</a>
@@ -91,27 +91,28 @@
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Company</h5>
           <ul class="footer-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">CSR Team</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{%url 'index'%}">Home</a></li>
+            <li><a href=""{% url 'about' %}"">About</a></li>
+            <li><a href="{% url 'newyangonlionsclub' %}">New Yangon Lions Club</a></li>
+            <li><a href="{% url 'yse' %}">Youth Society for Education</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Services</h5>
           <ul class="footer-menu">
-            <li><a href="#">Trading</a></li>
-            <li><a href="#">Finance</a></li>
-            <li><a href="#">Logistics</a></li>
+            <li><a href="{% url 'trading' %}">Trading</a></li>
+            <li><a href="{% url 'wakhemainternationalremittance' %}">Remittance</a></li>
+            <li><a href="{% url 'wakhemamoneychanger' %}">Money Changer</a></li>
+            <li><a href="{% url 'logistics' %}">Logistics</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Get In Touch</h5>
           <ul class="footer-menu">
-            <li><a href="#"> <i class="fas fa-map-marked-alt"></i> No.9, Room ( A-4 ), 3rd Floor, Kyaung Street,
-                Myaynigone, Sanchaung township, Yangon, Myanmar.</a></li>
+            <li><a href="https://goo.gl/maps/tUtEKJD7ASFycaBc8"> <i class="fas fa-map-marked-alt"></i> No. (127), Ground Floor, 21st Street, Latha Township, Yangon, Myanmar</a></li>
             <li><a href="mailto:info@unitedgroup.com.mm"> <i class="fas fa-envelope-open-text"></i>
-                info@unitedgroup.com.mm</a></li>
+                management2023@gmail.com</a></li>
             <li><a href="tel:+9595041934"> <i class="fas fa-phone-volume"></i> +9595041934</a></li>
           </ul>
         </div>
@@ -120,7 +121,7 @@
           <h5>About Us</h5>
           <p class="footer-link mt-2" style="text-align: justify;">Established in 2011, Myanmar-based United Group is a
             spearheading and diversified group with its core business in the import and export sector.</p>
-          <a href="#">Details>></a>
+          <a href="{% url 'about' %}">Details>></a>
 
           <h5 class="mt-3">Social Media</h5>
           <div class="footer-sosmed mt-3">
@@ -135,7 +136,7 @@
 
       <hr>
 
-      <p id="copyright"> Copyright © 2021 United Group of Trading Co., Ltd | Designed by MTG </p>
+      <p id="copyright"> Copyright © 2021 United Group of Trading Co., Ltd | Designed by Solutech </p>
     </div>
   </footer>
 

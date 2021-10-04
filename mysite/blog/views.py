@@ -27,3 +27,6 @@ class WakhemaMoneyChangerView(TemplateView):
 
 class YouthSocietyForEducationView(TemplateView):
     template_name = 'youth society for education.html'
+
+def index(request):
+    context_dict = {''}
